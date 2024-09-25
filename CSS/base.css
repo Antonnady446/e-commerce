@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    height: 4rem;
+    border-bottom: 1px solid #E6E6E6;
+}
+.navbar-brand,.offcanvas-title{
+    font-family: "Yellowtail", cursive;
+    font-size:  1.6rem;
+}
+.nav-item a{
+    color: black;
+    transition-duration: 0.3s;
+    display: block;
+    padding: 15px;
+    margin-right: 10px;
+}
+.nav-item a:hover{
+    color: #FF9A00;
+    border-bottom: 1px solid #FF9A00;
+}
+.SignUp{
+    text-decoration: none;
+    margin-right: 10px;
+    color: black;
+    background-color: #ffb524;
+    padding: 8px 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    font-size: 14px;
+    color: #fff;
+
+}
+.SignUp:hover{
+    opacity: 0.85;
+}
+.navbar .navbar-toggler{
+    /* color: #fff; */
+    border-color: #FF9A00;
+    font-size: 24px;
+    margin-right: 8px;
+    box-shadow: none;
+}
+/* End Navbar */
+/* Startr landing */
+
+.text-secondary{
+    color: black !important;
+    padding-bottom: 1.75rem;
+}
+.product_des{
+    color: #6e7172 ;
+    text-wrap: balance;
+}
+.product_img{
+    position: relative;
+    padding: 1em;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    max-width: 23em;
+    z-index: 1;
+}
+.product_img::before{
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #FF9A00;
+    z-index: -1;
+    filter: blur(20px);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+}
+.active{
+    width: 321px;
+    border-radius: 50%;
+    animation: spin 30s linear infinite;
+    -webkit-animation: spin 50s linear infinite;
+}
+.product_img{
+    top: 80%;
+    left: 58%;
+}
+/* Start animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* end animation */
+/* End landing */
+/* Start content */
+/* Start Feature */
+.bgBF{
+    background: linear-gradient(360deg, rgba(228, 223, 217, 0.5) 5%, rgba(255, 255, 255, 0) 45%);
+}
+.bgLu{
+    background: linear-gradient(360deg, rgba(253, 186, 61, 0.5) 5%, rgba(255, 255, 255, 0) 45%);
+}
+.bgVe{
+    background: linear-gradient(360deg, rgba(90, 250, 93, 0.5) 5%, rgba(255, 255, 255, 0) 45%);
+}
+.bgMeat{
+
+    background: linear-gradient(360deg, rgba(255, 118, 108, 0.5) 5%, rgba(255, 255, 255, 0) 45%);
+}
+.bgDS{
+    background: linear-gradient(360deg, rgba(246, 220, 165, 0.5) 5%, rgba(255, 255, 255, 0) 45%);
+}
+.bgCH{
+    background: linear-gradient(360deg, rgba(193, 67, 25, 0.5) 5%, rgba(255, 255, 255, 0) 45%);
+}
+.tittle{
+    color: black;
+    font-size: 2.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* 0);
+    margin-right: calc(-.5*1.5rem);
+    margin-left: calc(-.5* 1.5rem);
+}
+.containar-about {
+    padding: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.box{
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.text-center{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* End Feature  */
+/* Start Fruits  */
+.fruite .fruite-categorie .fruite-name {
+    line-height: 40px;
+}
+.fruite .fruite-categorie .fruite-name a {
+    transition: 0.5s;
+}
+.fruite .fruite-item {
+    height: 100%;
+    transition: 0.5s;
+}
+.fruite .fruite-item:hover {
+    box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
+}
+.fruite .fruite-item .fruite-img {
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px 10px 0 0;
+}
+
+.fruite .fruite-item .fruite-img img {
+    transition: 0.5s;
+}
+.fruite .fruite-item .fruite-img img:hover {
+    transform: scale(1.3);
+}
+.rounded-pill{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #81c408;
+}
+.rounded-pill:hover{
+    background-color: #ffb524;
+}
+.rounded-bottom h4{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: #45595b;
+}
+.rounded-bottom p{
+    font-size: 1rem;
+    color: #747d88;
+}
+/* End Fruits  */
+/* End content */
+
+/* Satrt Footer */
+.footer{
+    background-color: #333;
+    height: 70px;
+}
+.footer h1{
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 70px;
+}
+/* End Footer */
